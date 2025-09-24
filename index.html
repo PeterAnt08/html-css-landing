@@ -3,34 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ecommerce Landing</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Makets</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    .login-btn {
+      padding: 8px 20px;
+      border: 2px solid black;
+      border-radius: 25px;
+      background: none;
+      cursor: pointer;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 80px;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      line-height: 1.3;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btns {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btns button {
+      padding: 12px 28px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .shop-btn {
+      background: black;
+      color: white;
+    }
+
+    .contact-btn {
+      background: none;
+      border: 2px solid black;
+    }
+
+    .hero-img img {
+      width: 500px;
+      border-radius: 15px; /* щоб було красиво */
+    }
+
+    .scroll {
+      margin-top: 40px;
+      color: gray;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .scroll span {
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(5px); }
+    }
+  </style>
 </head>
 <body>
-
-  <header class="header">
-    <div class="logo">ShopLogo</div>
-    <nav class="nav">
+  <header>
+    <div class="logo">HomeShop</div>
+    <nav>
       <ul>
-        <li><a href="#">Головна</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Про нас</a></li>
-        <li><a href="#">Контакти</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <button class="btn">Увійти</button>
+    <button class="login-btn">Login</button>
   </header>
 
- 
-  <main class="hero">
+  <section class="hero">
     <div class="hero-text">
-      <h1>Стильна колекція 2025</h1>
-      <p>Обирайте сучасний одяг за вигідними цінами.</p>
-      <button class="btn">Купити зараз</button>
+      <h1>Wellcome</h1>
+      <p>Find the perfect outfit for any occasion. Shop the latest trends now!</p>
+      <div class="btns">
+        <button class="shop-btn">Shop Now</button>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+      <div class="scroll">
+        <span>↓</span> Scroll Down
+      </div>
     </div>
+
     <div class="hero-img">
-      <img src="img/hero.jpg" alt="Одяг з нової колекції">
+      <img src="hero.png" alt="Hero Image">
     </div>
-  </main>
+  </section>
 </body>
 </html>
