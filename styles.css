@@ -1,4 +1,3 @@
-/* Базові стилі */
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +10,12 @@ body {
   background: #fff;
 }
 
-/* Контейнер */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* HEADER */
 .site-header {
   padding: 20px 0;
   display: flex;
@@ -33,7 +30,6 @@ body {
   width: 100%;
 }
 
-/* Логотип */
 .logo {
   font-weight: 800;
   font-size: 20px;
@@ -45,7 +41,6 @@ body {
   color: transparent;
 }
 
-/* Навігація */
 .main-nav {
   display: flex;
   gap: 24px;
@@ -57,7 +52,6 @@ body {
   font-size: 15px;
 }
 
-/* Кнопка Login */
 .btn.login {
   background: #000;
   color: #fff;
@@ -67,7 +61,6 @@ body {
   font-size: 14px;
 }
 
-/* HERO */
 .hero {
   padding: 80px 0;
   text-align: left;
@@ -102,7 +95,6 @@ body {
   line-height: 1.6;
 }
 
-/* Кнопки */
 .hero-buttons {
   display: flex;
   gap: 15px;
@@ -125,7 +117,6 @@ body {
   font-weight: 600;
 }
 
-/* Картинка справа */
 .hero-image {
   flex: 1;
   display: flex;
@@ -138,7 +129,6 @@ body {
   height: auto;
 }
 
-/* Scroll Down */
 .scroll {
   text-align: center;
   margin-top: 50px;
